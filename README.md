@@ -21,28 +21,28 @@ Required Software
 GCC Compiler: Version 4.4.7 (The supercomputer used from SINES lab had this compiler so mmy code is optimised for this compiler)
 OpenMP: Usually included with GCC
 
-System Requirements
+# System Requirements
 
 Linux/Unix environment
 Multi-core CPU for parallel execution
 
- Installation & Build
+# Installation & Build:
 
-Clone the repository:
+# Clone the repository:
 bashgit clone https://github.com/princess-humario/Parallel-Computing-Project
 cd Parallel-Computing-Project
 
-Build all versions:
+# Build all versions:
 bashmake clean
 make all
 
-Usage
-Serial Version
+# Usage:
+# Serial Version
 bash./LaplaceSolver
-# Input: rows, columns, max_iterations, tolerance
-OpenMP Version
+//Input: rows, columns, max_iterations, tolerance
+# OpenMP Version
 bash./LaplaceSolver_super
-# Input: rows, columns, max_iterations, tolerance, num_threads
-MPI Version
+//Input: rows, columns, max_iterations, tolerance, num_threads
+# MPI Version
 bashmpirun -np <num_processes> ./LaplaceSolver_mpi
-# Input: rows, columns, max_iterations, tolerance
+//Input: rows, columns, max_iterations, tolerance
