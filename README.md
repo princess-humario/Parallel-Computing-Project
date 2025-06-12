@@ -29,20 +29,20 @@ Multi-core CPU for parallel execution
 # Installation & Build:
 
 # Clone the repository:
-bashgit clone https://github.com/princess-humario/Parallel-Computing-Project
+git clone https://github.com/princess-humario/Parallel-Computing-Project
 cd Parallel-Computing-Project
 
 # Build all versions:
-bashmake clean
+make clean
 make all
 
 # Usage:
 # Serial Version
-bash./LaplaceSolver
+./LaplaceSolver
 //Input: rows, columns, max_iterations, tolerance
 # OpenMP Version
-bash./LaplaceSolver_super
+./LaplaceSolver_super
 //Input: rows, columns, max_iterations, tolerance, num_threads
 # MPI Version
-bashmpirun -np <num_processes> ./LaplaceSolver_mpi
+mpirun -np <num_processes> ./LaplaceSolver_mpi
 //Input: rows, columns, max_iterations, tolerance
