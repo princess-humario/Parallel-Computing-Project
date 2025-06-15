@@ -3,23 +3,23 @@ This work incorporates an MPI parallel Laplace equation solver for high-performa
 
 This project implements and compares three different approaches to solving the 2D Laplace equation:
 
-Serial Implementation: Single-threaded baseline version
-OpenMP Implementation: Shared-memory parallelization using OpenMP
-MPI Implementation: Distributed-memory parallelization using Message Passing Interface
+- Serial Implementation: Single-threaded baseline version
+- OpenMP Implementation: Shared-memory parallelization using OpenMP
+- MPI Implementation: Distributed-memory parallelization using Message Passing Interface
 
 The solver uses the Jacobi iterative method with a 5-point stencil to solve the steady-state heat distribution problem on a 2D grid.
 
 Key Findings:
 
-OpenMP demonstrates superior performance over MPI across all matrix sizes
-MPI shows poor scalability due to communication overhead
-OpenMP achieves best speedup (1.43x) on smaller matrices
-Performance gap between OpenMP and MPI increases with matrix size
+- OpenMP demonstrates superior performance over MPI across all matrix sizes
+- MPI shows poor scalability due to communication overhead
+- OpenMP achieves best speedup (1.43x) on smaller matrices
+- Performance gap between OpenMP and MPI increases with matrix size
 
 Required Software
 
-GCC Compiler: Version 4.4.7 (The supercomputer used from SINES lab had this compiler so mmy code is optimised for this compiler)
-OpenMP: Usually included with GCC
+- GCC Compiler: Version 4.4.7 (The supercomputer used from SINES lab had this compiler so my code is optimised for this compiler)
+- OpenMP: Usually included with GCC
 
 # System Requirements
 
